@@ -40,6 +40,7 @@ export default function Category() {
                 <Link to={`/category/${category}`} className="text-white text-decoration-none">
                   {category}
                 </Link>
+                
               </li>
             ))}
           </ul>

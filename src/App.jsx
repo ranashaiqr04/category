@@ -10,16 +10,20 @@ import Contact from './component/contact/Contact';
 import Footer from './component/footer/Footer';
 import Categorey from './component/categorey/Categorey.jsx';
 import CategoryPage from './component/page/CategoryPage.jsx';
+import Product from './component/product/Product.jsx';
+import Detail from './component/product/ProductDetail.jsx';
 export default function App() {
   return (
    <>
    <Nav/>
    <Routes>
     <Route path='/' element={<Home/>}></Route>
+    <Route path='/Product' element={<Product/>}></Route>
     <Route path='/About' element={<About/>}></Route>
     <Route path='/Contact' element={<Contact/>}></Route>
     <Route path='/Categorey' element={<Categorey/>}></Route>
     <Route path="/category/:category" element={<CategoryPage />} />
+    <Route path="/product/:id" element={<Detail />} />
 
 
 

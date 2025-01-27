@@ -7,10 +7,8 @@ export default function Nav() {
     <>
       <nav className="navbar navbar-expand-lg bg-light">
         <div className="container">
-          {/* العلامة التجارية */}
           <a className="navbar-brand" href="#">Navbar</a>
-          
-          {/* زر التبديل للشاشات الصغيرة */}
+      
           <button
             className="navbar-toggler"
             type="button"
@@ -26,14 +24,12 @@ export default function Nav() {
           {/* محتوى القائمة */}
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto"> {/* استخدام ms-auto لتوزيع العناصر */}
-              <li className="nav-item">
-                <Link className="nav-link " to="/About">About</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/Contact">Contact</Link>
-              </li>
+
               <li className="nav-item">
                 <Link className="nav-link" to="/Categorey">Categorey</Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/Product">Product</Link>
               </li>
             </ul>
           </div>
